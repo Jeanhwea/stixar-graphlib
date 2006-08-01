@@ -222,7 +222,7 @@ Available targets include
         <fileset dir="${builddir}/classes"/>
         <fileset dir="${basedir}" excludes=".svn" includes="src/**/*"/>
         <fileset dir="${basedir}"
-            includes="LICENSE.txt,README.txt,build.xml,default.properties"/>
+            includes="LICENSE.txt,build.xml,default.properties"/>
     </jar>
 
     <copy todir="${distdir}/classes">
@@ -232,12 +232,6 @@ Available targets include
     <chmod dir="${distdir}/bin" perm="0555"
       includes ="*"/>
 
-    <copy todir="${distdir}" file="README.txt">
-      <filterchain>
-        <filterreader 
-           classname="org.apache.tools.ant.filters.ExpandProperties"/>
-      </filterchain>
-    </copy>
 
     <copy todir="${distdir}/lib">
       <fileset dir="${basedir}/lib/"/>

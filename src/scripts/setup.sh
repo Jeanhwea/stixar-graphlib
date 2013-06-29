@@ -9,7 +9,7 @@
 #
 # set up kirkos jars
 #
-CLASSPATH=${CLASSPATH}:/Users/scott/Downloads/stixar-graphlib/dist/lib/stixar-0.0.1-alpha.jar
+CLASSPATH=${CLASSPATH}:/Users/scott/Dev/stixar-graphlib/dist/lib/stixar-0.0.1-alpha.jar
 
 
 #

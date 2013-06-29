@@ -248,7 +248,7 @@ public class Transitivity
         t.run();
         CList<Edge> added = new CList<Edge>();
         int[] marks = new int[mdg.nodeAttrSize()];
-        int mark = 0;
+        int mark = 1;
         for (Node i : mdg.nodes()) {
             for (Edge e = i.out(); e != null; e = e.next()) {
                 e.target().setInt(marks, mark);
